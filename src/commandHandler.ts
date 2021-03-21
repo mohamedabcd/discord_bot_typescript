@@ -27,6 +27,7 @@ export default class CommandHandler {
     }
 
     message.reply(`Hive Greeter recieved '${this.echoMessage(message)}' from ${message.author.tag}`);
+    message.reply(`Add '${this.echoMessage(message)}' from ${message.author.tag}`);
 
     const commandParser = new CommandParser(message, this.prefix);
 

@@ -29,5 +29,8 @@ client.on("ready", () => { console.log("Hive Greeter has started"); });
 client.on("message", (message: Message) => { commandHandler.handleMessage(message); });
 client.on("error", e => { console.error("Discord client error!", e); });
 
+// il lit tous les messages
+//client.on('message', message => {console.log(message.content);});
+
 client.login(DISCORD_TOKEN);
 app.listen(PORT, () => console.log(`Server started on port ${PORT}!`));
