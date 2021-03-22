@@ -12,6 +12,7 @@ export class CommandParser {
 
     this.commandPrefix = prefix;
     const splitMessage = message.content.slice(prefix.length).trim().split(/ +/g);
+    console.log("splitMessage " + splitMessage)
     const commandName = splitMessage.shift() || "";
     this.parsedCommandName = commandName.toLowerCase();
     this.args = splitMessage;

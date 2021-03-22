@@ -12,4 +12,5 @@ export default interface Command {
 
   /** Execute the command. */
   run(parsedUserCommand: Message): Promise<void>;
+  
 }
